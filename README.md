@@ -11,4 +11,4 @@ $$\mathcal{L}(\mathbf{w})=\frac{1}{2}\sum_{i=1}^n(y_i-\bar{\mathbf{x}}\mathbf{w}
 Trong đó $\mathbf{y}=(y_1,y_2,\dots,y_n)^T,\bar{\mathbf{X}}=[\bar{x_1;x_2;\dots;x_n}]$
 ### Nghiệm của bài toán
 Đạo hàm theo $\mathbf{w}$ của hàm $\mathcal{L}(\mathbf{w})$
-$$\frac{\partial \mathcal{L}(\mathbf{w})}{\partial \mathbf{w}}= {||a||}_{a}$$
+$${\nabla_{\mathbf{w}}}\mathcal{L}(\mathbf{w})=\frac{1}{2}\nabla{||\mathbf{y}-\bar{\mathbf{X}}\mathbf{w}||}_2^2=\frac{1}{2}\nabla[(\mathbf{y}-\bar{\mathbf{X}}\mathbf{w})^T(\mathbf{y}-\bar{\mathbf{X}}\mathbf{w})]=\bar{\mathbf{X}}^T(\bar{\mathbf{X}}\mathbf{w}-\mathbf{y})$$

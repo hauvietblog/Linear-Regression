@@ -18,3 +18,34 @@ Nếu ma trận vuông $\mathbf{A} \triangleq \mathbf{\bar{X}}^T\mathbf{\bar{X}}
 Nếu ma trận $\mathbf{A}$ không khả nghịch thì phương trình $(2)$ có nghiệm 
 $$\mathbf{w} = \mathbf{A}^{\dagger}\mathbf{b} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{\dagger} \mathbf{\bar{X}}^T\mathbf{y}$$
 ### 3. Ví dụ trên python
+#### 3.1. Bài toán
+Chúng ta có 1 bảng dữ liệu về năm và dân số nước ta như dưới đây:
+###
+$$\begin{array}{|c|c|}
+\hline
+\textbf{Year} & \textbf{Population}\\
+\hline
+\text{1950} & \text{25109200}\\
+\hline
+\text{1960} & \text{32718461}\\
+\hline
+\text{1970} & \text{41928849}\\
+\hline
+\text{1980} & \text{52968270}\\
+\hline
+\text{1990} & \text{66912613}\\
+\hline
+\text{2000} & \text{79001142}\\
+\hline
+\text{2010} & \text{87411012}\\
+\hline
+\text{2020} & \text{96648685}\\
+\hline
+\end{array}$$
+###
+#### 3.2. Hiển thị dữ liệu trên đồ thị
+![The best thing to hold onto in life is each other.!](C:/Users/Administrator/Documents/python/bieudodsvn.png "Wedding - Save the date")
+
+
+
+

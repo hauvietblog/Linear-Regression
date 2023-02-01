@@ -44,7 +44,7 @@ $$\begin{array}{|c|c|}
 \end{array}$$
 ###
 #### 3.2. Hiển thị dữ liệu trên đồ thị
-![The best thing to hold onto in life is each other.!](C:/Users/Administrator/Documents/python/bieudodsvn.png "Wedding - Save the date")
+![bieudodsvn](https://user-images.githubusercontent.com/72483300/216109556-8fc57231-3181-4006-b52b-25661e3282d1.png)
 
 
 

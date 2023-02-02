@@ -46,13 +46,19 @@ $$\begin{array}{|c|c|}
 #### 3.2. Hiển thị dữ liệu trên đồ thị
 ````python
 import matplotlib.pyplot as plt
-plt.plot([1950,1960,1970,1980,1990,2000,2010,2020],[25109200,32718461,41928849,52968270,66912613,79001142,87411012,96648685],"go")
+import numpy as np
+X = np.array([[1950,1960,1970,1980,1990,2000,2010,2020]]).T
+y = np.array([[25109200,32718461,41928849,52968270,66912613,79001142,87411012,96648685]]).T
+plt.plot(X,y,"go")
 plt.title('Vietnam Population 1950-2020')
 plt.xlabel('Year')
 plt.ylabel('Population')
 plt.show()
 ````
+###
 ![bieudodsvn](https://user-images.githubusercontent.com/72483300/216109556-8fc57231-3181-4006-b52b-25661e3282d1.png)
-$$năm = w_1*(dân số) + w_0$$
+###
+$$\text{năm} = w_1*(\text{dân số}) + w_0$$
 #### 3.3. Nghiệm theo công thức
+
 

@@ -8,7 +8,7 @@ Giả sử hàm $f$ tuyến tính và phụ thuộc vào các tham số $w_i, i=
 $$y \approx \bar{\mathbf{x}}\mathbf{w}$$
 Nội dung của phương pháp là tìm các giá trị của tham số $\mathbf{w}$ sao cho biểu thức sau đạt cực tiểu
 $$\mathcal{L}(\mathbf{w})=\frac{1}{2}\sum_{i=1}^n(y_i-\bar{\mathbf{x}}\mathbf{w})^2= \frac{1}{2} ||\mathbf{y} - \mathbf{\bar{X}}\mathbf{w} ||_2^2 $$
-Trong đó $\mathbf{y}=(y_1,y_2,\dots,y_n)^T,\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_ ]$
+Trong đó $\mathbf{y}=(y_1,y_2,\dots,y_n)^T,\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1 \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}]$
 ### 2. Nghiệm của bài toán
 Đạo hàm theo $\mathbf{w}$ của hàm $\mathcal{L}(\mathbf{w})$
 $${\nabla_{\mathbf{w}}}\mathcal{L}(\mathbf{w})=\frac{1}{2}\nabla{||\mathbf{y}-\bar{\mathbf{X}}\mathbf{w}||}_2^2=\frac{1}{2}\nabla[(\mathbf{y}-\bar{\mathbf{X}}\mathbf{w})^T(\mathbf{y}-\bar{\mathbf{X}}\mathbf{w})]=\bar{\mathbf{X}}^T(\bar{\mathbf{X}}\mathbf{w}-\mathbf{y})$$\
@@ -60,5 +60,32 @@ plt.show()
 ###
 $$\text{năm} = w_1*(\text{dân số}) + w_0$$
 #### 3.3. Nghiệm theo công thức
-
-
+````python
+from Visualizing_Population_VIETNAM import X,y
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import linear_model
+one = np.ones([X.shape[0],1])
+Xbar = np.concatenate((one,X), axis = 1)
+A = np.dot(Xbar.T,Xbar)
+b = np.dot(Xbar.T, y)
+w = np.dot(np.linalg.pinv(A),b)
+print('w = ',w)
+regr = linear_model.LinearRegression(fit_intercept=False)
+regr.fit(Xbar,y)
+print('solution by scikit-learn :',regr.coef_)
+w_0 = w[0][0]
+w_1 = w[1][0]
+x0 = np.linspace(1950, 2020)
+y0 = w_0 + w_1*x0
+plt.plot(X.T, y.T, 'go')     
+plt.plot(x0, y0)   
+plt.title('Vietnam Population 1950-2020')        
+plt.xlabel('Year')
+plt.ylabel('Population')
+plt.show()
+````
+![linear_regression](https://user-images.githubusercontent.com/72483300/216771842-023f755e-9533-410a-be4e-cd7e1f8890c0.png)
+### 4. Tài liệu tham khảo
+  1. [Linear Regression - Machine Learning cơ bản](https://machinelearningcoban.com/2016/12/28/linearregression/#-bai-toan)
+  2. [Bình phương tối thiểu - Wikipedia](https://vi.wikipedia.org/wiki/B%C3%ACnh_ph%C6%B0%C6%A1ng_t%E1%BB%91i_thi%E1%BB%83u)

@@ -1,4 +1,4 @@
-# [Machine Learning cơ bản](https://machinelearningcoban.com/about/)
+# [Machine Learning cơ bản]([https://machinelearningcoban.com/about](https://machinelearningcoban.com/2016/12/28/linearregression/)/)
 ## Bài 1: [Linear Regression](https://machinelearningcoban.com/2016/12/28/linearregression/)
 ### 1. Bài toán
 Giả sử có n điểm dữ liệu trong không gian n-chiều, chúng ta cần tìm một hàm $f$ thỏa mãn 

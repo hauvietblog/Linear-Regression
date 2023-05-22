@@ -90,5 +90,3 @@ plt.show()
   1. [Linear Regression - Machine Learning cơ bản](https://machinelearningcoban.com/2016/12/28/linearregression/#-bai-toan)
   2. [Bình phương tối thiểu - Wikipedia](https://vi.wikipedia.org/wiki/B%C3%ACnh_ph%C6%B0%C6%A1ng_t%E1%BB%91i_thi%E1%BB%83u)
   3. [Dân số việt nam 1950-2020](https://www.macrotrends.net/countries/VNM/vietnam/population)
-
-$$ {\left\lbrack \matrix{1 & x_1 & x_2 & \dots & x_n \cr 1 & x_2 \cr \dots & \dots \cr 1 & x_n} \right\rbrack} $$

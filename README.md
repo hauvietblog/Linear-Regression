@@ -1,7 +1,7 @@
 # [Machine Learning cơ bản](https://machinelearningcoban.com/about/)
 ## Bài 1: [Linear Regression](https://machinelearningcoban.com/2016/12/28/linearregression/)
 ### 1. Bài toán
-Giả sử có n điểm dữ liệu trong không gian m-chiều $(x_1^{(i)},x_2^{(i)},\dots,x_m^{(i)}\), i=1 \dots m$, chúng ta cần tìm một hàm $f$ thỏa mãn 
+Giả sử có n điểm dữ liệu trong không gian m-chiều $(x_1^{(i)},x_2^{(i)},\dots,x_n^{(i)}\), i=1 \dots m$, chúng ta cần tìm một hàm $f$ thỏa mãn 
 $$f(\mathbf{x}) \approx y$$
 $$f(\mathbf{x})=w_1x_1+w_2x_2+\dots+w_mx_m+w_0 ~~~~~(1)$$
 Giả sử hàm $f$ tuyến tính và phụ thuộc vào các tham số $w_i, i= 0,\dots,m$. Đặt $\mathbf{w}=(w_0,w_1,\dots,w_m)^T$ và $\bar{\mathbf{x}}=(1,x_1,\dots,x_m)$ khi đó phương trình (1) viết lại dưới dạng:

@@ -1,9 +1,9 @@
 # [Machine Learning cơ bản](https://machinelearningcoban.com/about/)
 ## Bài 1: [Linear Regression](https://machinelearningcoban.com/2016/12/28/linearregression/)
 ### 1. Bài toán
-Giả sử có n điểm dữ liệu trong không gian m-chiều $\mathbf{x_i}=(x_1^{(i)},x_2^{(i)},\dots,x_m^{(i)}\), i=1 \dots n$, chúng ta cần tìm một hàm $f$ thỏa mãn 
-$$f(\mathbf{x}) \approx y$$
-$$f(\mathbf{x})=w_1x_1+w_2x_2+\dots+w_mx_m+w_0 ~~~~~(1)$$
+Giả sử có n điểm dữ liệu trong không gian m-chiều $(x_1^{(i)},x_2^{(i)},\dots,x_m^{(i)}), i=1 \dots n$, chúng ta cần tìm một hàm $f$ thỏa mãn 
+$$f(x_1^{(i)},x_2^{(i)},\dots,x_m^{(i)}) \approx y^{(i)}$$
+$$f(x_1^{(i)},x_2^{(i)},\dots,x_m^{(i)})=w_1x_1^{(i)}+w_2x_2^{(i)}+\dots+w_mx_m^{(i)}+w_0 ~~~~~(1)$$
 Giả sử hàm $f$ tuyến tính và phụ thuộc vào các tham số $w_i, i= 0,\dots,m$. Đặt $\mathbf{w}=(w_0,w_1,\dots,w_m)^T$ và $\bar{\mathbf{x}}=(1,x_1,\dots,x_m)$ khi đó phương trình (1) viết lại dưới dạng:
 $$y \approx \bar{\mathbf{x}}\mathbf{w}$$
 Nội dung của phương pháp là tìm các giá trị của tham số $\mathbf{w}$ sao cho biểu thức sau đạt cực tiểu

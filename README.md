@@ -13,7 +13,7 @@ Giả sử hàm $f$ tuyến tính và phụ thuộc vào các tham số $w_i, i=
 $$y \approx \bar{\mathbf{x}}\mathbf{w}$$ 
 Nội dung của phương pháp là tìm các giá trị của tham số $\mathbf{w}$ sao cho  biểu thức sau đạt cực tiểu
 $$\mathcal{L}(\mathbf{w})=\frac{1}{2}\sum_{i=1}^n(y_{i}-\bar{\mathbf{x}}_{i}\ma thbf{w})^2= \frac{1}{2} ||\mathbf{y} - \mathbf{\bar{X}}\mathbf{w} ||_2^2 $$  
-### 
+###  
 Trong đó $\mathbf{y}=(y_{1},y_{2},\dots,y_{n})^T,\mathbf{\bar{X}} = [\mathbf{\bar{x}_1}\mathbf{\bar{x}_2}; \dots \mathbf{\bar{x}}_n]={\left\lbrack \matrix{1&x_1^{(1)}&x_2^{(1)}&\dots&x_m^{(1)} \cr 1&x_1^{(2)}&x_2^{(2)}&\dots&x_m^{(2)} \cr \dots&\dots&\dots&\dots&\dots \cr 1&x_1^{(n)}&x_2^{(n)}&\dots&x_m^{(n)} } \right\rbrack}$
 ### 2. Nghiệm của bài toán
 Đạo hàm theo $\mathbf{w}$ của hàm $\mathcal{L}(\mathbf{w})$
